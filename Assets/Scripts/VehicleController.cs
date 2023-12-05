@@ -24,6 +24,7 @@ public class VehicleController : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<SplineAnimate>();
+       // GetComponent<VehicleObstacleDetector>().enabled = true;
     }
     private void OnMouseDown()
     {
@@ -72,7 +73,6 @@ public class VehicleController : MonoBehaviour
 
         while (elapsedTime < duration)
         {
-
             anim.ElapsedTime -= Time.deltaTime;
             elapsedTime += Time.deltaTime;
             yield return null; // Wait for the next frame

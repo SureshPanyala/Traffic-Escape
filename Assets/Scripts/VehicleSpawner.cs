@@ -37,6 +37,7 @@ public class VehicleSpawner : MonoBehaviour
         animate.AnimationMethod = SplineAnimate.Method.Speed;
         animate.MaxSpeed = 15;
         animate.Loop = SplineAnimate.LoopMode.Once;
+        //car.AddComponent<VehicleObstacleDetector>();
     }
 
     private void ApplySymbolOnCar()

@@ -1,41 +1,63 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Splines;
 
 public class VehicleObstacleDetector : MonoBehaviour
 {
-    SplineAnimate anim;
     public LayerMask layer;
 
-    List<BezierKnot> knots;
+    public SplineContainer container;
+    List<BezierKnot> knotsPos;
     private void Start()
     {
-        anim = GetComponent<SplineAnimate>(); anim = GetComponent<SplineAnimate>();
-        knots = anim.Container.Spline.Knots.ToList();
+        container = GetComponent<SplineContainer>();
+        GetKnotes();
     }
-    public bool CheckForVehicleObstacles()
-    { 
-        for (int i = 0; i < anim.Container.Spline.Knots.Count() - 1; i++)
-        {
-            Vector3 startPoint = (Vector3)(knots[i].Position);
-            Vector3 endPoint = (Vector3)(knots[i + 1].Position);
-            RaycastHit hit;
-            Debug.Log("Start Point: " + startPoint);
-            Debug.Log("End Point: " + endPoint);
-           
-            if (Physics.Linecast(startPoint, endPoint, out hit, layer))
-            {
-                return true;
-            }
-        }
-        return false;
+    private void GetKnotes()
+    {
+        knotsPos = container.Spline.ToList();
     }
 
-    private void Update()
+    Vector3 startPoint;
+    Vector3 endPoint;
+    public bool CheckForVehicleObstacles()
     {
-        CheckForVehicleObstacles();
+        bool canMOve = true;
+        for (int i = 0; i < container.Spline.Knots.Count() - 1 ; i++)
+        {
+            if(i == 0)
+            {
+                startPoint = knotsPos[i].Position - (float3)transform.position;
+            }
+            else
+            {
+                startPoint = knotsPos[i].Position;//transform.TransformPoint(knotsPos[i].Position);
+                endPoint = knotsPos[i + 1].Position;//transform.TransformPoint(knotsPos[i + 1].Position);
+                canMOve = DetectCollition(startPoint, endPoint);
+            }  
+        }
+        return canMOve;
     }
+    private bool DetectCollition(Vector3 startPos, Vector3 endPos)
+    {
+        Vector3 direction = (endPos - startPos).normalized; // Calculate the direction from start to end
+        float distance = Vector3.Distance(startPos, endPos); // Calculate the distance between start and end
+
+        Debug.DrawRay(startPos, direction * distance, Color.black); // Draw the ray for visualization
+
+        RaycastHit hit;
+        if (Physics.Raycast(startPos, direction, out hit, distance, layer)) // Perform the raycast
+        {
+            return true;
+        }
+        else
+            return false;
+    }
+
+    //private void Update()
+    //{
+    //    CheckForVehicleObstacles();
+    //}
 }

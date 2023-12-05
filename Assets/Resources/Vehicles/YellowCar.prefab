@@ -1461,9 +1461,6 @@ MonoBehaviour:
   randomness: 0
   snapping: 0
   fadeOut: 0
-  layer:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!65 &8380597430807752833
 BoxCollider:
   m_ObjectHideFlags: 0
