@@ -6,6 +6,7 @@ using System;
 using DG.Tweening;
 using System.Linq;
 using System.Collections.Generic;
+using System.Runtime.ConstrainedExecution;
 
 public class VehicleController : MonoBehaviour
 {
@@ -38,18 +39,23 @@ public class VehicleController : MonoBehaviour
     }
     private void DriveVehicle()
     {
+        GetComponent<Rigidbody>().isKinematic = false;
         anim.Restart(true);
     }
     private void OnCollisionEnter(Collision collision)
     {
-        carCollided?.Invoke();
-        Destroy(carDriveSound);
-        HitEffect hitEffect = Instantiate(EffectsManager.instance.hitEffect);
-        hitEffect.transform.position = collision.contacts[0].point;
-        var controller = collision.gameObject.GetComponent<VehicleController>();
-        StartCoroutine(controller.DoShake());
-        anim.Pause();
-        StartCoroutine(ReverseAnimation());
+        var otherCar = collision.gameObject.GetComponent<SplineAnimate>();
+        if (otherCar)
+        {
+            carCollided?.Invoke();
+            Destroy(carDriveSound);
+            HitEffect hitEffect = Instantiate(EffectsManager.instance.hitEffect);
+            hitEffect.transform.position = collision.contacts[0].point;
+            var controller = collision.gameObject.GetComponent<VehicleController>();
+            StartCoroutine(controller.DoShake());
+            anim.Pause();
+            StartCoroutine(ReverseAnimation());
+        }
     }
     public IEnumerator DoShake()
     {

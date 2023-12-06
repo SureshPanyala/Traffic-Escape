@@ -79,7 +79,8 @@ public class VehicleManager : MonoBehaviour
     {
         YellowCar,
         Police,
-        Bus
+        Bus,
+        Tocus
     }
 
     [Serializable]

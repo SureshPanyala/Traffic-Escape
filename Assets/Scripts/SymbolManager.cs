@@ -14,6 +14,9 @@ public static class SymbolManager
         hardRight,
         rightUTurn,
         leftUTurn,
+        whiteStraight,
+        whiteLeft,
+        whiteUturnLeft,
     }
 
     private static Dictionary<SymbolsEnum, Sprite> symbolDictionary;
@@ -35,7 +38,10 @@ public static class SymbolManager
             { SymbolsEnum.hardLeft, Resources.Load<Sprite>("Symbols/hardLeft") },
             { SymbolsEnum.hardRight, Resources.Load<Sprite>("Symbols/hardRight") },
             { SymbolsEnum.rightUTurn, Resources.Load<Sprite>("Symbols/rightUTurn") },
-            { SymbolsEnum.leftUTurn, Resources.Load<Sprite>("Symbols/leftUTurn") }
+            { SymbolsEnum.leftUTurn, Resources.Load<Sprite>("Symbols/leftUTurn") },
+            { SymbolsEnum.whiteStraight, Resources.Load<Sprite>("Symbols/whiteStraight") },
+            { SymbolsEnum.whiteLeft, Resources.Load<Sprite>("Symbols/whiteLeft") },
+            { SymbolsEnum.whiteUturnLeft, Resources.Load<Sprite>("Symbols/whiteUturnLeft") }
         };
     }
 
