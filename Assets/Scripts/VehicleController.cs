@@ -4,9 +4,6 @@ using UnityEngine.UI;
 using System.Collections;
 using System;
 using DG.Tweening;
-using System.Linq;
-using System.Collections.Generic;
-using System.Runtime.ConstrainedExecution;
 
 public class VehicleController : MonoBehaviour
 {
@@ -72,6 +69,19 @@ public class VehicleController : MonoBehaviour
         UIManager.Instance.touchTutorial?.SetActive(false);
         carDriveSound = SoundManager.instance.PlaySound(sound: SoundManager.Sounds.CarDrive);
         DriveVehicle();
+        CheckForCollitions();
+    }
+    void CheckForCollitions()
+    {
+        if (anim.Container.gameObject.GetComponent<ObstacleDetector>().CheckIfPathIsClear())
+        {
+            directionMarkImage.enabled = false;
+            GetComponent<VehicleController>().enabled = false;
+        }
+    }
+    void DisableCollider()
+    {
+        GetComponent<BoxCollider>().enabled = false;
     }
 
     private void DriveVehicle()
@@ -86,6 +96,7 @@ public class VehicleController : MonoBehaviour
         {
             carCollided?.Invoke();
             Destroy(carDriveSound);
+            directionMarkImage.enabled = true;
             HitEffect hitEffect = Instantiate(EffectsManager.instance.hitEffect);
             hitEffect.transform.position = collision.contacts[0].point;
             var controller = collision.gameObject.GetComponent<VehicleController>();
@@ -106,13 +117,14 @@ public class VehicleController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         carDriveSound.Stop();
+        DisableCollider();
         Debug.Log("Past the Boundary score++");
         WinController.Instance.FinishedCars++;
     }
     private IEnumerator ReverseAnimation()
     {
         float duration = anim.ElapsedTime;
-        float elapsedTime = 0f;
+        float elapsedTime = 0.001f;
 
         while (elapsedTime < duration)
         {

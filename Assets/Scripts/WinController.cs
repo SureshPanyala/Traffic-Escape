@@ -9,7 +9,10 @@ public class WinController : MonoBehaviour
     }
     public int totalCarsToFinish;
     private int finishedCars;
-
+    private void Start()
+    {
+        finishedCars = 0;
+    }
     public int FinishedCars
     {
         get { return finishedCars; }
@@ -22,6 +25,8 @@ public class WinController : MonoBehaviour
 
     private void CheckWinCondition()
     {
+        Debug.Log("NUM FINISHED CARS" + finishedCars);
+        Debug.Log("TOTAL CARS TO FINISH" + totalCarsToFinish);
         if (finishedCars >= totalCarsToFinish)
         {
             SoundManager.instance.PlaySound(sound: SoundManager.Sounds.PartPop);
