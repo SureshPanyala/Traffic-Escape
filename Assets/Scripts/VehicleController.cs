@@ -38,10 +38,10 @@ public class VehicleController : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (GameManager.instance.isCarMoving)
-            return; 
+        //if (GameManager.instance.isCarMoving)
+          //  return; 
 
-        GameManager.instance.isCarMoving = true;
+        //GameManager.instance.isCarMoving = true;
  
         randomXPosition = UnityEngine.Random.Range(-4, 4);
         playerpos = this.transform.position;
@@ -123,7 +123,9 @@ public class VehicleController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         carDriveSound.Stop();
-       // DisableCollider();
+       // GameManager.instance.isCarMoving = false;
+        DisableCollider();
+        gameObject.SetActive(false);
         Debug.Log("Past the Boundary score++");
         WinController.Instance.FinishedCars++;
     }
@@ -139,7 +141,7 @@ public class VehicleController : MonoBehaviour
             yield return null;
         }
         rb.isKinematic = true;
-        GameManager.instance.isCarMoving = false;
+        //GameManager.instance.isCarMoving = false;
         Debug.Log("Vehicle stoped moving");
     }
     [SerializeField]
