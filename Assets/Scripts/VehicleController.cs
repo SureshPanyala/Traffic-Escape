@@ -25,20 +25,24 @@ public class VehicleController : MonoBehaviour
     private bool isHelicopterON = false;
     private int randomXPosition = 3;
     AudioSource carDriveSound;
-    
+    Quaternion rot;
+    Rigidbody rb;
+   
     private void Start()
     {
         anim = GetComponent<SplineAnimate>();
+        rb = GetComponent<Rigidbody>();
         Currentspline = anim.Container;
-       // GetComponent<VehicleObstacleDetector>().enabled = true;
+        rot = transform.localRotation;
+        // GetComponent<VehicleObstacleDetector>().enabled = true;
     }
     private void OnMouseDown()
     {
-        if (GameManager.instance.isCarMoving == true)
-        {
-            Debug.Log("CarMoving");
-            return;
-        }
+        if (GameManager.instance.isCarMoving)
+            return; 
+
+        GameManager.instance.isCarMoving = true;
+ 
         randomXPosition = UnityEngine.Random.Range(-4, 4);
         playerpos = this.transform.position;
         Debug.Log(playerpos + "Player picked up!");
@@ -86,7 +90,7 @@ public class VehicleController : MonoBehaviour
 
     private void DriveVehicle()
     {
-        GetComponent<Rigidbody>().isKinematic = false;
+        rb.isKinematic = false;
         anim.Restart(true);
     }
     private void OnCollisionEnter(Collision collision)
@@ -100,38 +104,43 @@ public class VehicleController : MonoBehaviour
             HitEffect hitEffect = Instantiate(EffectsManager.instance.hitEffect);
             hitEffect.transform.position = collision.contacts[0].point;
             var controller = collision.gameObject.GetComponent<VehicleController>();
-            StartCoroutine(controller.DoShake());
+            controller.DoShake();
             anim.Pause();
             StartCoroutine(ReverseAnimation());
         }
     }
-    public IEnumerator DoShake()
+    public void DoShake()
     {
-        anim.enabled = false;
+        ToggleAnim(false);
         transform.DOShakeRotation(duration, strength, vibrato,
-            randomness, fadeOut, ShakeRandomnessMode.Harmonic);
-        yield return new WaitForSeconds(duration);
-        anim.enabled = true;
+            randomness, fadeOut, ShakeRandomnessMode.Harmonic).OnComplete(()=>ToggleAnim(true));
+    }
+    void ToggleAnim(bool val)
+    {
+        anim.enabled = val;
     }
 
     private void OnTriggerExit(Collider other)
     {
         carDriveSound.Stop();
-        DisableCollider();
+       // DisableCollider();
         Debug.Log("Past the Boundary score++");
         WinController.Instance.FinishedCars++;
     }
+    
     private IEnumerator ReverseAnimation()
     {
         float duration = anim.ElapsedTime;
-        float elapsedTime = 0.001f;
-
+        float elapsedTime = 0f;
         while (elapsedTime < duration)
         {
-            anim.ElapsedTime -= Time.deltaTime;
-            elapsedTime += Time.deltaTime;
-            yield return null; // Wait for the next frame
+            elapsedTime += Time.deltaTime * 0.5f;
+            anim.ElapsedTime -= Time.deltaTime * 0.5f;
+            yield return null;
         }
+        rb.isKinematic = true;
+        GameManager.instance.isCarMoving = false;
+        Debug.Log("Vehicle stoped moving");
     }
     [SerializeField]
     SplineContainer Currentspline;
@@ -141,7 +150,6 @@ public class VehicleController : MonoBehaviour
         if (anim.Container == Currentspline)
         {
             anim.Container.gameObject.GetComponent<VehicleSpawner>().SwitchSpline();
-
         }
         else
         {
@@ -159,7 +167,6 @@ public class VehicleController : MonoBehaviour
         }
         else if(isHelicopterON && isPickedUp)
         {
-            
             MoveHelicopterToSpecificPosition(new Vector3(randomXPosition, 25f, 1f));
         }
     }

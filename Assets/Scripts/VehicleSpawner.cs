@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.ProBuilder.MeshOperations;
@@ -17,22 +18,22 @@ public class VehicleSpawner : MonoBehaviour
     SplineAnimate animate;
     private void OnEnable()
     {
-        //splineRoute = GetComponent<SplineContainer>();
+        splineRoute = GetComponent<SplineContainer>();
     }
     private void Start()
     {
-       InstantiateVehicle();
+      StartCoroutine(InstantiateVehicle());
     }
-    private void InstantiateVehicle()
+    private IEnumerator InstantiateVehicle()
     {
         car = VehicleManager.Instance.GetCarType(vehicle: carType);
   
         AddSplineAnimateToCar();
         ApplySymbolOnCar();
         car.SetActive(true);
-
+       // car.transform.localRotation = transform.localRotation;
         car.GetComponent<VehicleController>().enabled = true;
-       
+        yield return null;
     }
     public void SwitchSplineAnimateOfCar()
     {
@@ -53,7 +54,7 @@ public class VehicleSpawner : MonoBehaviour
         animate.AnimationMethod = SplineAnimate.Method.Speed;
         animate.MaxSpeed = 15;
         animate.Loop = SplineAnimate.LoopMode.Once;
-        // car.transform.rotation = Quaternion.Inverse(splineRoute.Splines.ToList()[0].Knots.ToList()[0].Rotation);
+        animate.StartOffset = 0.001f;        // car.transform.rotation = Quaternion.Inverse(splineRoute.Splines.ToList()[0].Knots.ToList()[0].Rotation);
         //Debug.Log("first knot rotaion is"+splineRoute.Splines.ToList()[0].Knots.ToList()[0].Rotation);
     }
 
@@ -67,11 +68,14 @@ public class VehicleSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (car != null && splineRoute != null && splineRoute.Splines.Count > 0)
-        {
-          //  Quaternion initialRotation = Quaternion.Inverse(splineRoute.Splines.ToList()[0].Knots.ToList()[0].Rotation);
-            car.transform.rotation = Quaternion.Euler(CarRotation);
-        }
-        // car.transform.localRotation = Quaternion.Euler(CarRotation);
+        //if (car != null && splineRoute != null && splineRoute.Splines.Count > 0)
+        //{
+        //  //  Quaternion initialRotation = Quaternion.Inverse(splineRoute.Splines.ToList()[0].Knots.ToList()[0].Rotation);
+           
+        //}
+    }
+    private void FixedUpdate()
+    {
+      //  car.transform.localRotation = Quaternion.Euler(CarRotation);
     }
 }

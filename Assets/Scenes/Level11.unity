@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 592132097}
   - component: {fileID: 592132098}
   - component: {fileID: 592132099}
+  - component: {fileID: 592132100}
   m_Layer: 0
   m_Name: Car2Spline
   m_TagString: Untagged
@@ -632,6 +633,22 @@ MonoBehaviour:
   symbolsType: 10
   ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 270, z: 0}
+--- !u!114 &592132100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592132096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3701767c75a9d4396ac47f5382e24a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  container: {fileID: 0}
 --- !u!1 &630152430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1428,7 @@ GameObject:
   - component: {fileID: 1079844069}
   - component: {fileID: 1079844071}
   - component: {fileID: 1079844072}
+  - component: {fileID: 1079844073}
   m_Layer: 0
   m_Name: Car1Spline
   m_TagString: Untagged
@@ -1653,6 +1671,22 @@ MonoBehaviour:
       m_Data: []
   m_Knots:
     m_KnotsLink: []
+--- !u!114 &1079844073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079844068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3701767c75a9d4396ac47f5382e24a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  container: {fileID: 0}
 --- !u!1 &1295361039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,6 +1791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1491366886}
   - component: {fileID: 1491366887}
+  - component: {fileID: 1491366888}
   m_Layer: 0
   m_Name: carsplinewitch
   m_TagString: Untagged
@@ -2062,6 +2097,22 @@ MonoBehaviour:
       m_Data: []
   m_Knots:
     m_KnotsLink: []
+--- !u!114 &1491366888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491366885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3701767c75a9d4396ac47f5382e24a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  container: {fileID: 0}
 --- !u!1 &1527679895
 GameObject:
   m_ObjectHideFlags: 0

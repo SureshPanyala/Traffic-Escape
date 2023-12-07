@@ -1462,6 +1462,7 @@ MonoBehaviour:
   snapping: 0
   fadeOut: 0
   SymbolsType: 9
+  pickupDistance: 1
   Currentspline: {fileID: 0}
 --- !u!65 &8380597430807752833
 BoxCollider:
@@ -1510,7 +1511,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 94
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &1351497917872934
 GameObject:
   m_ObjectHideFlags: 0

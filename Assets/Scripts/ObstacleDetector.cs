@@ -37,7 +37,7 @@ public class ObstacleDetector : MonoBehaviour
         Vector3 direction = (endPos - startPos).normalized; // Calculate the direction from start to end
         float distance = Vector3.Distance(startPos, endPos); // Calculate the distance between start and end
 
-        Debug.DrawLine(startPos, endPos, Color.black); // Draw the ray for visualization
+        Debug.DrawLine(startPos, endPos, Color.red); // Draw the ray for visualization
 
         RaycastHit hit;
         if (Physics.Linecast(startPos, endPos, out hit)) // Perform the raycast
@@ -52,7 +52,7 @@ public class ObstacleDetector : MonoBehaviour
 
     private void Update()
     {
-        CheckIfPathIsClear();
+        //CheckIfPathIsClear();
         //CheckForVehicleObstacles();
     }
 }

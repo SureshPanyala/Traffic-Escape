@@ -365,19 +365,19 @@ MonoBehaviour:
         y: 0.25
         z: 7.99
       TangentIn:
-        x: 0
-        y: 0
-        z: 0
+        x: -0
+        y: -0
+        z: -0.34303647
       TangentOut:
         x: 0
         y: 0
-        z: 0
+        z: 0.34303647
       Rotation:
         value:
-          x: -0.22714667
-          y: -0.6407858
-          z: -0.20687936
-          w: 0.7035615
+          x: 4.2703e-18
+          y: 0.71224135
+          z: -4.2085047e-18
+          w: -0.7019346
     - Position:
         x: -0.66000026
         y: 0.25
@@ -415,68 +415,68 @@ MonoBehaviour:
           z: 0
           w: 0
     m_MetaData:
-    - Mode: 1
+    - Mode: 0
       Tension: 0.5
       m_DistanceToInterpolation:
       - Distance: 0
         T: 0
-      - Distance: 0.011955575
+      - Distance: 0.04503681
         T: 0.03448276
-      - Distance: 0.046696622
+      - Distance: 0.108217776
         T: 0.06896552
-      - Distance: 0.10253565
+      - Distance: 0.18810841
         T: 0.10344828
-      - Distance: 0.17778426
+      - Distance: 0.28327328
         T: 0.13793103
-      - Distance: 0.27075544
+      - Distance: 0.39227885
         T: 0.1724138
-      - Distance: 0.3797608
+      - Distance: 0.5136897
         T: 0.20689656
-      - Distance: 0.5031126
+      - Distance: 0.6460714
         T: 0.2413793
-      - Distance: 0.6391234
+      - Distance: 0.7879896
         T: 0.27586207
-      - Distance: 0.7861045
+      - Distance: 0.9380088
         T: 0.31034482
-      - Distance: 0.94236904
+      - Distance: 1.0946953
         T: 0.3448276
-      - Distance: 1.106229
+      - Distance: 1.2566141
         T: 0.37931034
-      - Distance: 1.2759962
+      - Distance: 1.4223307
         T: 0.41379312
-      - Distance: 1.4499828
+      - Distance: 1.5904099
         T: 0.44827586
-      - Distance: 1.626501
+      - Distance: 1.7594174
         T: 0.4827586
-      - Distance: 1.8038635
+      - Distance: 1.9279188
         T: 0.51724136
-      - Distance: 1.9803818
+      - Distance: 2.0944788
         T: 0.55172414
-      - Distance: 2.1543686
+      - Distance: 2.2576635
         T: 0.5862069
-      - Distance: 2.3241355
+      - Distance: 2.4160376
         T: 0.62068963
-      - Distance: 2.4879956
+      - Distance: 2.5681672
         T: 0.6551724
-      - Distance: 2.6442602
+      - Distance: 2.712617
         T: 0.6896552
-      - Distance: 2.7912414
+      - Distance: 2.8479521
         T: 0.7241379
-      - Distance: 2.927252
+      - Distance: 2.9727387
         T: 0.7586207
-      - Distance: 3.050604
+      - Distance: 3.085542
         T: 0.79310346
-      - Distance: 3.1596096
+      - Distance: 3.184927
         T: 0.82758623
-      - Distance: 3.2525802
+      - Distance: 3.2694585
         T: 0.86206895
-      - Distance: 3.3278294
+      - Distance: 3.337703
         T: 0.8965517
-      - Distance: 3.3836682
+      - Distance: 3.388225
         T: 0.9310345
-      - Distance: 3.4184096
+      - Distance: 3.4195907
         T: 0.9655172
-      - Distance: 3.4303648
+      - Distance: 3.4303646
         T: 1
     - Mode: 1
       Tension: 0.5
@@ -627,8 +627,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aabcdfe2cbfdb241b078cfc7e9ed4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splineRoute: {fileID: 0}
+  changeSplineRoute: {fileID: 0}
   carType: 0
   symbolsType: 10
+  ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 270, z: 0}
 --- !u!114 &592132100
 MonoBehaviour:
@@ -1192,8 +1195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aabcdfe2cbfdb241b078cfc7e9ed4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splineRoute: {fileID: 0}
+  changeSplineRoute: {fileID: 0}
   carType: 0
   symbolsType: 10
+  ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1079844072
 MonoBehaviour:
@@ -1413,6 +1419,55 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   container: {fileID: 0}
+--- !u!1 &1153039705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153039707}
+  - component: {fileID: 1153039706}
+  m_Layer: 0
+  m_Name: Gamemanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1153039706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153039705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259812c266ab42c42b6b67f7a19f62d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPower: 2
+  helicopterObject: {fileID: 0}
+  isCarMoving: 0
+  helicopterCount: 10
+  switchCount: 10
+--- !u!4 &1153039707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153039705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1445054693
 GameObject:
   m_ObjectHideFlags: 0
@@ -6043,3 +6098,4 @@ SceneRoots:
   - {fileID: 869667298486326393}
   - {fileID: 1847818336}
   - {fileID: 6076739429729173405}
+  - {fileID: 1153039707}
