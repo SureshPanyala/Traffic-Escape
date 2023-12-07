@@ -5,14 +5,17 @@ using UnityEngine.Splines;
 public class VehicleSpawner : MonoBehaviour
 {
 
-    SplineContainer splineRoute;
+    [SerializeField] SplineContainer splineRoute;
+    public SplineContainer changeSplineRoute;
     [SerializeField] VehicleManager.Vehicles carType;
     [SerializeField] SymbolManager.SymbolsEnum symbolsType;
+    [SerializeField] SymbolManager.SymbolsEnum ChangeSymbolsType;
     [SerializeField] Vector3 CarRotation;
     GameObject car;
+    SplineAnimate animate;
     private void OnEnable()
     {
-        splineRoute = GetComponent<SplineContainer>();
+        //splineRoute = GetComponent<SplineContainer>();
     }
     private void Start()
     {
@@ -29,10 +32,20 @@ public class VehicleSpawner : MonoBehaviour
         car.GetComponent<VehicleController>().enabled = true;
        
     }
-
+    public void SwitchSplineAnimateOfCar()
+    {
+        car.GetComponent<VehicleController>().directionMarkImage.sprite = SymbolManager.GetSymbol(ChangeSymbolsType);
+        animate.Container = changeSplineRoute;
+    }
+    public void SwitchSpline()
+    {
+            animate.Container = changeSplineRoute;
+            car.GetComponent<VehicleController>().directionMarkImage.sprite = SymbolManager.GetSymbol(ChangeSymbolsType);
+            GameManager.instance.currentPower = GameManager.PowerType.none;
+    }
     private void AddSplineAnimateToCar()
     {
-        SplineAnimate animate = car.AddComponent<SplineAnimate>();
+        animate = car.AddComponent<SplineAnimate>();
         animate.PlayOnAwake = false;
         animate.Container = splineRoute;
         animate.AnimationMethod = SplineAnimate.Method.Speed;
