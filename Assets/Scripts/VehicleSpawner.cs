@@ -1,5 +1,7 @@
 using System;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.ProBuilder.MeshOperations;
 using UnityEngine.Splines;
 
 public class VehicleSpawner : MonoBehaviour
@@ -38,7 +40,6 @@ public class VehicleSpawner : MonoBehaviour
         animate.AnimationMethod = SplineAnimate.Method.Speed;
         animate.MaxSpeed = 15;
         animate.Loop = SplineAnimate.LoopMode.Once;
-     
         // car.transform.rotation = Quaternion.Inverse(splineRoute.Splines.ToList()[0].Knots.ToList()[0].Rotation);
         //Debug.Log("first knot rotaion is"+splineRoute.Splines.ToList()[0].Knots.ToList()[0].Rotation);
     }
@@ -53,6 +54,11 @@ public class VehicleSpawner : MonoBehaviour
 
     private void Update()
     {
-        car.transform.rotation = Quaternion.Euler(CarRotation);
+        if (car != null && splineRoute != null && splineRoute.Splines.Count > 0)
+        {
+          //  Quaternion initialRotation = Quaternion.Inverse(splineRoute.Splines.ToList()[0].Knots.ToList()[0].Rotation);
+            car.transform.rotation = Quaternion.Euler(CarRotation);
+        }
+        // car.transform.localRotation = Quaternion.Euler(CarRotation);
     }
 }

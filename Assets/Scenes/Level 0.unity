@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 592132097}
   - component: {fileID: 592132098}
   - component: {fileID: 592132099}
+  - component: {fileID: 592132100}
   m_Layer: 0
   m_Name: Car2Spline
   m_TagString: Untagged
@@ -324,7 +325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592132096}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -629,6 +630,22 @@ MonoBehaviour:
   carType: 0
   symbolsType: 10
   CarRotation: {x: 0, y: 270, z: 0}
+--- !u!114 &592132100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592132096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3701767c75a9d4396ac47f5382e24a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  container: {fileID: 0}
 --- !u!1 &630152430
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +818,7 @@ Transform:
   m_GameObject: {fileID: 725800647}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.47000027, y: -3.386701, z: -1.56}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -884,7 +901,7 @@ Transform:
   m_GameObject: {fileID: 778068137}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -1.99, z: -6.85}
+  m_LocalPosition: {x: 0.03, y: 0.85000014, z: -6.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1091,7 +1108,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.59012, y: 0, z: 0, w: 0.8073155}
-  m_LocalPosition: {x: -0.28, y: 21.29, z: 0.45}
+  m_LocalPosition: {x: -0.28, y: 24.8, z: 0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1122,7 +1139,7 @@ Transform:
   m_GameObject: {fileID: 969613678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.59, y: -3.709999, z: 5.1}
+  m_LocalPosition: {x: -3.02, y: -0.41, z: 6.94}
   m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1140,6 +1157,7 @@ GameObject:
   - component: {fileID: 1079844069}
   - component: {fileID: 1079844071}
   - component: {fileID: 1079844072}
+  - component: {fileID: 1079844073}
   m_Layer: 0
   m_Name: Car1Spline
   m_TagString: Untagged
@@ -1155,7 +1173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079844068}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1175,7 +1193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carType: 0
-  symbolsType: 9
+  symbolsType: 10
   CarRotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1079844072
 MonoBehaviour:
@@ -1379,6 +1397,22 @@ MonoBehaviour:
       m_Data: []
   m_Knots:
     m_KnotsLink: []
+--- !u!114 &1079844073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079844068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3701767c75a9d4396ac47f5382e24a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  container: {fileID: 0}
 --- !u!1 &1445054693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,7 +1600,7 @@ Transform:
   m_GameObject: {fileID: 1994384764}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -1.99, z: 22.22}
+  m_LocalPosition: {x: 0.03, y: 0.85, z: 22.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5703,11 +5737,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: d9ab2401bf6839744952d1947386d8b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.71
+      value: -0.41000104
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: d9ab2401bf6839744952d1947386d8b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.6
+      value: 5.44
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: d9ab2401bf6839744952d1947386d8b3, type: 3}
       propertyPath: m_LocalRotation.w
