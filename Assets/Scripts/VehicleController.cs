@@ -7,6 +7,14 @@ using DG.Tweening;
 
 public class VehicleController : MonoBehaviour
 {
+    public enum VehicleType
+    {
+        Car,
+        Aeroplane,
+        Boat
+    }
+
+    public VehicleType vehicleType;
     public static event Action carCollided;
     public Image directionMarkImage;
     SplineAnimate anim;
@@ -41,6 +49,7 @@ public class VehicleController : MonoBehaviour
         {
             directionMarkImage.enabled = false;
             GetComponent<VehicleController>().enabled = false;
+            GameManager.instance.isCarMoving = false;
         }
     }
     void DisableCollider()
@@ -83,6 +92,19 @@ public class VehicleController : MonoBehaviour
         DisableCollider();
         Debug.Log("Past the Boundary score++");
         WinController.Instance.FinishedCars++;
+        SplineContainer splineContainer = anim.Container; 
+        splineContainer.gameObject.SetActive(false);
+        GameManager.instance.isCarMoving = false;
+        anim.Container = null;
+        gameObject.SetActive(false);
+        
+        //if the vehicle non-car
+        DisappearEffect();
+    }
+
+    private void DisappearEffect()
+    {
+        
     }
     private IEnumerator ReverseAnimation()
     {
@@ -91,9 +113,124 @@ public class VehicleController : MonoBehaviour
 
         while (elapsedTime < duration)
         {
+<<<<<<< Updated upstream
             anim.ElapsedTime -= Time.deltaTime;
             elapsedTime += Time.deltaTime;
             yield return null; // Wait for the next frame
+=======
+            elapsedTime += Time.deltaTime * 0.5f;
+            anim.ElapsedTime -= Time.deltaTime * 0.5f;
+            yield return null;
+        }
+        rb.isKinematic = true;
+        GameManager.instance.isCarMoving = false;
+        Debug.Log("Vehicle stoped moving");
+    }
+    [SerializeField]
+    SplineContainer Currentspline;
+    public void SwitchSpline()
+    {
+        // Toggle between splineRoute and changeSplineRoute
+        if (anim.Container == Currentspline)
+        {
+            anim.Container.gameObject.GetComponent<VehicleSpawner>().SwitchSpline();
+        }
+        else
+        {
+            anim.Container = Currentspline;
+            directionMarkImage.sprite = SymbolManager.GetSymbol(SymbolsType);
+            GameManager.instance.currentPower = GameManager.PowerType.none;
+            GameManager.instance.isCarMoving = false;
+        }
+    }
+    void Update()
+    {
+        if (isHelicopterON && !isPickedUp)
+        {
+            // Check for mouse button down to initiate helicopter movement
+            MoveHelicopterToPlayer();
+        }
+        else if(isHelicopterON && isPickedUp)
+        {
+            MoveHelicopterToSpecificPosition(new Vector3(randomXPosition, 25f, 1f));
+        }
+    }
+    void MoveHelicopterToPlayer()
+    {
+        Vector3 randomSkyPosition = GenerateRandomSkyPosition();
+        Vector3 playerPosition = this.transform.position;
+        float step = 10f * Time.deltaTime;
+        GameManager.instance.helicopterObject.transform.position = Vector3.MoveTowards(GameManager.instance.helicopterObject.transform.position, playerpos, step);
+        float distanceToPlayer = Vector3.Distance(GameManager.instance.helicopterObject.transform.position, playerpos);
+        Debug.Log(distanceToPlayer +"Player picked up!");
+        if (distanceToPlayer < pickupDistance)
+        {
+            isPickedUp = true;
+            this.transform.tag = "Player";
+            this.transform.SetParent(GameManager.instance.helicopterObject.transform);
+            Debug.Log("Player picked up!");
+        }
+    }
+
+    public void MoveHelicopter()
+    {
+        GameManager.instance.isCarMoving = true;
+        GameManager.instance.helicopterObject.transform.DOMove(playerpos, 3f, false)
+            .OnComplete(MovementComplete);
+       
+    }
+    void MovementComplete()
+    {
+        this.transform.tag = "Player";
+        this.transform.SetParent(GameManager.instance.helicopterObject.transform);
+        GameManager.instance.helicopterObject.transform.DOMove(GenerateRandomSkyPosition(), 3f, false).OnComplete(HeliCopterReachedBack);
+        // Code to be executed after the movement is complete
+        Debug.Log("Helicopter movement complete!");
+        // Add your additional code here...
+    }
+
+    void HeliCopterReachedBack()
+    {
+        foreach (Transform child in GameManager.instance.helicopterObject.transform)
+        {
+            if (child.tag == "Player")
+                // Deactivate the child object
+                child.gameObject.SetActive(false);
+        }
+        // Additional actions, if any
+        GameManager.instance.currentPower = GameManager.PowerType.none;
+        //isHelicopterON = false;
+        WinController.Instance.FinishedCars++;
+        GameManager.instance.isCarMoving = false;
+    }
+    Vector3 GenerateRandomSkyPosition()
+    {
+        // Customize this method based on your sky position requirements
+        float randomX = UnityEngine.Random.Range(-10f, 10f);
+        float randomY = UnityEngine.Random.Range(20f, 30f);
+        float randomZ = UnityEngine.Random.Range(-10f, 10f);
+
+        return new Vector3(randomX, randomY, randomZ);
+    }
+    void MoveHelicopterToSpecificPosition(Vector3 targetPosition)
+    {
+        float step = 10f * Time.deltaTime;
+        GameManager.instance.helicopterObject.transform.position = Vector3.MoveTowards(GameManager.instance.helicopterObject.transform.position, targetPosition, step);
+
+        // If the helicopter has reached the target position, you might want to perform additional actions
+        if (GameManager.instance.helicopterObject.transform.position == targetPosition)
+        {
+            foreach (Transform child in GameManager.instance.helicopterObject.transform)
+            {
+                if(child.tag == "Player")
+                // Deactivate the child object
+                child.gameObject.SetActive(false);
+            }
+            // Additional actions, if any
+            GameManager.instance.currentPower = GameManager.PowerType.none;
+            isHelicopterON = false;
+            WinController.Instance.FinishedCars++;
+>>>>>>> Stashed changes
         }
     }
 }
