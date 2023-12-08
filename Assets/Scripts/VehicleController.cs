@@ -7,6 +7,14 @@ using DG.Tweening;
 
 public class VehicleController : MonoBehaviour
 {
+    public enum VehicleType
+    {
+        Car,
+        Aeroplane,
+        Boat
+    }
+
+    public VehicleType vehicleType;
     public static event Action carCollided;
     public Image directionMarkImage;
     SplineAnimate anim;
@@ -17,52 +25,14 @@ public class VehicleController : MonoBehaviour
     [SerializeField] private bool snapping;
     [SerializeField] private bool fadeOut;
     [SerializeField] private object randomnessMode;
-    [SerializeField] SymbolManager.SymbolsEnum SymbolsType;
-    GameManager.PowerType powerType;
-    public float pickupDistance = 1f;
-    private Vector3 playerpos;
-    private bool isPickedUp = false;
-    private bool isHelicopterON = false;
-    private int randomXPosition = 3;
+
     AudioSource carDriveSound;
-    
     private void Start()
     {
         anim = GetComponent<SplineAnimate>();
-        Currentspline = anim.Container;
        // GetComponent<VehicleObstacleDetector>().enabled = true;
     }
     private void OnMouseDown()
-    {
-        GameManager.instance.ResetHint();
-        GameManager.instance.CheckEligibleVehiclesForSignback();
-        if (GameManager.instance.isCarMoving == true)
-        {
-            Debug.Log("CarMoving");
-            return;
-        }
-        randomXPosition = UnityEngine.Random.Range(-4, 4);
-        playerpos = this.transform.position;
-        Debug.Log(playerpos + "Player picked up!");
-
-        switch (GameManager.instance.currentPower)
-        {
-            case GameManager.PowerType.helicopter:
-                isHelicopterON= true;
-                MoveHelicopter();
-                // Do something for helicopter power type
-                break;
-            case GameManager.PowerType.switchdirection:
-                SwitchSpline();
-                // Do something for switchdirection power type
-                break;
-            case GameManager.PowerType.none:
-                MoveVechile();
-                // Do something for none power type
-                break;
-        }
-    }
-    private void MoveVechile()
     {
         if (UIManager.Instance.SettingsPanel.activeSelf)
         {
@@ -79,13 +49,13 @@ public class VehicleController : MonoBehaviour
         {
             directionMarkImage.enabled = false;
             GetComponent<VehicleController>().enabled = false;
+            GameManager.instance.isCarMoving = false;
         }
     }
     void DisableCollider()
     {
         GetComponent<BoxCollider>().enabled = false;
     }
-
     private void DriveVehicle()
     {
         GetComponent<Rigidbody>().isKinematic = false;
@@ -104,7 +74,6 @@ public class VehicleController : MonoBehaviour
             var controller = collision.gameObject.GetComponent<VehicleController>();
             StartCoroutine(controller.DoShake());
             anim.Pause();
-            GameManager.instance.CallTakeDamage();
             StartCoroutine(ReverseAnimation());
         }
     }
@@ -123,12 +92,19 @@ public class VehicleController : MonoBehaviour
         DisableCollider();
         Debug.Log("Past the Boundary score++");
         WinController.Instance.FinishedCars++;
-<<<<<<< Updated upstream
-        SplineContainer maincontainer = anim.Container;
-        maincontainer.gameObject.SetActive(false);
-=======
+        SplineContainer splineContainer = anim.Container; 
+        splineContainer.gameObject.SetActive(false);
         GameManager.instance.isCarMoving = false;
->>>>>>> Stashed changes
+        anim.Container = null;
+        gameObject.SetActive(false);
+        
+        //if the vehicle non-car
+        DisappearEffect();
+    }
+
+    private void DisappearEffect()
+    {
+        
     }
     private IEnumerator ReverseAnimation()
     {
@@ -137,34 +113,68 @@ public class VehicleController : MonoBehaviour
 
         while (elapsedTime < duration)
         {
+<<<<<<< Updated upstream
             anim.ElapsedTime -= Time.deltaTime;
             elapsedTime += Time.deltaTime;
             yield return null; // Wait for the next frame
+=======
+            elapsedTime += Time.deltaTime * 0.5f;
+            anim.ElapsedTime -= Time.deltaTime * 0.5f;
+            yield return null;
         }
+        rb.isKinematic = true;
+        GameManager.instance.isCarMoving = false;
+        Debug.Log("Vehicle stoped moving");
     }
     [SerializeField]
     SplineContainer Currentspline;
     public void SwitchSpline()
     {
-        GameManager.instance.SwitchCountNumber();
         // Toggle between splineRoute and changeSplineRoute
         if (anim.Container == Currentspline)
         {
             anim.Container.gameObject.GetComponent<VehicleSpawner>().SwitchSpline();
-
         }
         else
         {
             anim.Container = Currentspline;
             directionMarkImage.sprite = SymbolManager.GetSymbol(SymbolsType);
             GameManager.instance.currentPower = GameManager.PowerType.none;
+            GameManager.instance.isCarMoving = false;
+        }
+    }
+    void Update()
+    {
+        if (isHelicopterON && !isPickedUp)
+        {
+            // Check for mouse button down to initiate helicopter movement
+            MoveHelicopterToPlayer();
+        }
+        else if(isHelicopterON && isPickedUp)
+        {
+            MoveHelicopterToSpecificPosition(new Vector3(randomXPosition, 25f, 1f));
+        }
+    }
+    void MoveHelicopterToPlayer()
+    {
+        Vector3 randomSkyPosition = GenerateRandomSkyPosition();
+        Vector3 playerPosition = this.transform.position;
+        float step = 10f * Time.deltaTime;
+        GameManager.instance.helicopterObject.transform.position = Vector3.MoveTowards(GameManager.instance.helicopterObject.transform.position, playerpos, step);
+        float distanceToPlayer = Vector3.Distance(GameManager.instance.helicopterObject.transform.position, playerpos);
+        Debug.Log(distanceToPlayer +"Player picked up!");
+        if (distanceToPlayer < pickupDistance)
+        {
+            isPickedUp = true;
+            this.transform.tag = "Player";
+            this.transform.SetParent(GameManager.instance.helicopterObject.transform);
+            Debug.Log("Player picked up!");
         }
     }
 
     public void MoveHelicopter()
     {
         GameManager.instance.isCarMoving = true;
-        GameManager.instance.HelicopterCountNumber(); ;
         GameManager.instance.helicopterObject.transform.DOMove(playerpos, 3f, false)
             .OnComplete(MovementComplete);
        
@@ -174,7 +184,6 @@ public class VehicleController : MonoBehaviour
         this.transform.tag = "Player";
         this.transform.SetParent(GameManager.instance.helicopterObject.transform);
         GameManager.instance.helicopterObject.transform.DOMove(GenerateRandomSkyPosition(), 3f, false).OnComplete(HeliCopterReachedBack);
-        GameManager.instance.helicopterObject.transform.DORotate(new Vector3(0, 0, 30f), 1f);
         // Code to be executed after the movement is complete
         Debug.Log("Helicopter movement complete!");
         // Add your additional code here...
@@ -193,9 +202,6 @@ public class VehicleController : MonoBehaviour
         //isHelicopterON = false;
         WinController.Instance.FinishedCars++;
         GameManager.instance.isCarMoving = false;
-        GameManager.instance.isHelicopterModeOn = false;
-        SplineContainer splinecontainer = anim.Container;
-        splinecontainer.gameObject.SetActive(false);
     }
     Vector3 GenerateRandomSkyPosition()
     {
@@ -206,5 +212,25 @@ public class VehicleController : MonoBehaviour
 
         return new Vector3(randomX, randomY, randomZ);
     }
+    void MoveHelicopterToSpecificPosition(Vector3 targetPosition)
+    {
+        float step = 10f * Time.deltaTime;
+        GameManager.instance.helicopterObject.transform.position = Vector3.MoveTowards(GameManager.instance.helicopterObject.transform.position, targetPosition, step);
 
+        // If the helicopter has reached the target position, you might want to perform additional actions
+        if (GameManager.instance.helicopterObject.transform.position == targetPosition)
+        {
+            foreach (Transform child in GameManager.instance.helicopterObject.transform)
+            {
+                if(child.tag == "Player")
+                // Deactivate the child object
+                child.gameObject.SetActive(false);
+            }
+            // Additional actions, if any
+            GameManager.instance.currentPower = GameManager.PowerType.none;
+            isHelicopterON = false;
+            WinController.Instance.FinishedCars++;
+>>>>>>> Stashed changes
+        }
+    }
 }
