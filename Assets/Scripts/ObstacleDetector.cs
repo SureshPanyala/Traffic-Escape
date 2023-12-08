@@ -32,7 +32,7 @@ public class ObstacleDetector : MonoBehaviour
         Debug.Log("Checking if there any car along the path" + thereIsACarOnThePath);
         return thereIsACarOnThePath;
     }
-    private bool DetectCollition(Vector3 startPos, Vector3 endPos)
+    public bool DetectCollition(Vector3 startPos, Vector3 endPos)
     {
         Vector3 direction = (endPos - startPos).normalized; // Calculate the direction from start to end
         float distance = Vector3.Distance(startPos, endPos); // Calculate the distance between start and end
@@ -52,7 +52,7 @@ public class ObstacleDetector : MonoBehaviour
 
     private void Update()
     {
-        CheckIfPathIsClear();
+        //CheckIfPathIsClear();
         //CheckForVehicleObstacles();
     }
 }

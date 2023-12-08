@@ -34,6 +34,8 @@ public class VehicleController : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        GameManager.instance.ResetHint();
+        GameManager.instance.CheckEligibleVehiclesForSignback();
         if (GameManager.instance.isCarMoving == true)
         {
             Debug.Log("CarMoving");
@@ -46,7 +48,7 @@ public class VehicleController : MonoBehaviour
         switch (GameManager.instance.currentPower)
         {
             case GameManager.PowerType.helicopter:
-                //isHelicopterON= true;
+                isHelicopterON= true;
                 MoveHelicopter();
                 // Do something for helicopter power type
                 break;
@@ -102,6 +104,7 @@ public class VehicleController : MonoBehaviour
             var controller = collision.gameObject.GetComponent<VehicleController>();
             StartCoroutine(controller.DoShake());
             anim.Pause();
+            GameManager.instance.CallTakeDamage();
             StartCoroutine(ReverseAnimation());
         }
     }
@@ -120,6 +123,8 @@ public class VehicleController : MonoBehaviour
         DisableCollider();
         Debug.Log("Past the Boundary score++");
         WinController.Instance.FinishedCars++;
+        SplineContainer maincontainer = anim.Container;
+        maincontainer.gameObject.SetActive(false);
     }
     private IEnumerator ReverseAnimation()
     {
@@ -137,6 +142,7 @@ public class VehicleController : MonoBehaviour
     SplineContainer Currentspline;
     public void SwitchSpline()
     {
+        GameManager.instance.SwitchCountNumber();
         // Toggle between splineRoute and changeSplineRoute
         if (anim.Container == Currentspline)
         {
@@ -150,39 +156,11 @@ public class VehicleController : MonoBehaviour
             GameManager.instance.currentPower = GameManager.PowerType.none;
         }
     }
-    void Update()
-    {
-        if (isHelicopterON && !isPickedUp)
-        {
-            // Check for mouse button down to initiate helicopter movement
-            MoveHelicopterToPlayer();
-        }
-        else if(isHelicopterON && isPickedUp)
-        {
-            
-            MoveHelicopterToSpecificPosition(new Vector3(randomXPosition, 25f, 1f));
-        }
-    }
-    void MoveHelicopterToPlayer()
-    {
-        Vector3 randomSkyPosition = GenerateRandomSkyPosition();
-        Vector3 playerPosition = this.transform.position;
-        float step = 10f * Time.deltaTime;
-        GameManager.instance.helicopterObject.transform.position = Vector3.MoveTowards(GameManager.instance.helicopterObject.transform.position, playerpos, step);
-        float distanceToPlayer = Vector3.Distance(GameManager.instance.helicopterObject.transform.position, playerpos);
-        Debug.Log(distanceToPlayer +"Player picked up!");
-        if (distanceToPlayer < pickupDistance)
-        {
-            isPickedUp = true;
-            this.transform.tag = "Player";
-            this.transform.SetParent(GameManager.instance.helicopterObject.transform);
-            Debug.Log("Player picked up!");
-        }
-    }
 
     public void MoveHelicopter()
     {
         GameManager.instance.isCarMoving = true;
+        GameManager.instance.HelicopterCountNumber(); ;
         GameManager.instance.helicopterObject.transform.DOMove(playerpos, 3f, false)
             .OnComplete(MovementComplete);
        
@@ -192,6 +170,7 @@ public class VehicleController : MonoBehaviour
         this.transform.tag = "Player";
         this.transform.SetParent(GameManager.instance.helicopterObject.transform);
         GameManager.instance.helicopterObject.transform.DOMove(GenerateRandomSkyPosition(), 3f, false).OnComplete(HeliCopterReachedBack);
+        GameManager.instance.helicopterObject.transform.DORotate(new Vector3(0, 0, 30f), 1f);
         // Code to be executed after the movement is complete
         Debug.Log("Helicopter movement complete!");
         // Add your additional code here...
@@ -210,6 +189,9 @@ public class VehicleController : MonoBehaviour
         //isHelicopterON = false;
         WinController.Instance.FinishedCars++;
         GameManager.instance.isCarMoving = false;
+        GameManager.instance.isHelicopterModeOn = false;
+        SplineContainer splinecontainer = anim.Container;
+        splinecontainer.gameObject.SetActive(false);
     }
     Vector3 GenerateRandomSkyPosition()
     {
@@ -220,24 +202,5 @@ public class VehicleController : MonoBehaviour
 
         return new Vector3(randomX, randomY, randomZ);
     }
-    void MoveHelicopterToSpecificPosition(Vector3 targetPosition)
-    {
-        float step = 10f * Time.deltaTime;
-        GameManager.instance.helicopterObject.transform.position = Vector3.MoveTowards(GameManager.instance.helicopterObject.transform.position, targetPosition, step);
 
-        // If the helicopter has reached the target position, you might want to perform additional actions
-        if (GameManager.instance.helicopterObject.transform.position == targetPosition)
-        {
-            foreach (Transform child in GameManager.instance.helicopterObject.transform)
-            {
-                if(child.tag == "Player")
-                // Deactivate the child object
-                child.gameObject.SetActive(false);
-            }
-            // Additional actions, if any
-            GameManager.instance.currentPower = GameManager.PowerType.none;
-            isHelicopterON = false;
-            WinController.Instance.FinishedCars++;
-        }
-    }
 }

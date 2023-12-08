@@ -13,7 +13,7 @@ public class VehicleSpawner : MonoBehaviour
     [SerializeField] SymbolManager.SymbolsEnum symbolsType;
     [SerializeField] SymbolManager.SymbolsEnum ChangeSymbolsType;
     [SerializeField] Vector3 CarRotation;
-    GameObject car;
+    public GameObject car;
     SplineAnimate animate;
     private void OnEnable()
     {
