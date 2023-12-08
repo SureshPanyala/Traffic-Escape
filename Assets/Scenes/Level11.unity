@@ -452,8 +452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aabcdfe2cbfdb241b078cfc7e9ed4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splineRoute: {fileID: 237179804}
-  changeSplineRoute: {fileID: 237179804}
+  splineRoute: {fileID: 0}
+  changeSplineRoute: {fileID: 0}
   carType: 0
   symbolsType: 0
   ChangeSymbolsType: 0
@@ -8026,7 +8026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8452197703786351136, guid: 629223e3d23b2834b9711a1594a0d127, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 12.000008
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -125,6 +125,9 @@ public class VehicleController : MonoBehaviour
         WinController.Instance.FinishedCars++;
         SplineContainer maincontainer = anim.Container;
         maincontainer.gameObject.SetActive(false);
+        GameManager.instance.isCarMoving = false;
+        gameObject.SetActive(false);
+
     }
     private IEnumerator ReverseAnimation()
     {
