@@ -81,7 +81,8 @@ public class VehicleManager : MonoBehaviour
         Yellow,
         Police,
         Bus,
-        Tocus
+        Tocus,
+        TestCar
     }
 
     [Serializable]
