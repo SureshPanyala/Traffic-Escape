@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -90,6 +91,11 @@ public class GameManager : MonoBehaviour
         
     }
     // Start is called before the first frame update
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         checkPowerMode = false;
@@ -97,7 +103,6 @@ public class GameManager : MonoBehaviour
         helicopterCount = PlayerPrefs.GetInt("HelicopterCount", 500);
         switchCount = PlayerPrefs.GetInt("SwitchCount", 500);
         currentPower = PowerType.none;
-        instance = this;
     }
     public void SetSwitchDirection()
     {

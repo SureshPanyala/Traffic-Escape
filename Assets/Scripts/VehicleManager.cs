@@ -78,11 +78,10 @@ public class VehicleManager : MonoBehaviour
     public enum Vehicles
     {
         YellowCar,
-        Yellow,
         Police,
         Bus,
         Tocus,
-        TestCar
+        Boat
     }
 
     [Serializable]
