@@ -123,8 +123,12 @@ public class VehicleController : MonoBehaviour
         DisableCollider();
         Debug.Log("Past the Boundary score++");
         WinController.Instance.FinishedCars++;
+<<<<<<< Updated upstream
         SplineContainer maincontainer = anim.Container;
         maincontainer.gameObject.SetActive(false);
+=======
+        GameManager.instance.isCarMoving = false;
+>>>>>>> Stashed changes
     }
     private IEnumerator ReverseAnimation()
     {
