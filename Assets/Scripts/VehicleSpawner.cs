@@ -43,7 +43,9 @@ public class VehicleSpawner : MonoBehaviour
     public void SwitchSpline()
     {
             animate.Container = changeSplineRoute;
-            car.GetComponent<VehicleController>().directionMarkImage.GetComponent<SpriteRenderer>().sprite = SymbolManager.GetSymbol(ChangeSymbolsType);
+            VehicleController vehicleController = car.GetComponent<VehicleController>();
+            vehicleController.directionMarkImage.GetComponent<SpriteRenderer>().sprite = SymbolManager.GetSymbol(ChangeSymbolsType);
+        vehicleController.SymbolsType = symbolsType;
             GameManager.instance.currentPower = GameManager.PowerType.none;
     }
     private void AddSplineAnimateToCar()

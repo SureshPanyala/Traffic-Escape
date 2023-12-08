@@ -17,7 +17,7 @@ public class VehicleController : MonoBehaviour
     [SerializeField] private bool snapping;
     [SerializeField] private bool fadeOut;
     [SerializeField] private object randomnessMode;
-    [SerializeField] SymbolManager.SymbolsEnum SymbolsType;
+    public SymbolManager.SymbolsEnum SymbolsType;
     GameManager.PowerType powerType;
     public float pickupDistance = 1f;
     private Vector3 playerpos;
@@ -25,11 +25,12 @@ public class VehicleController : MonoBehaviour
     private bool isHelicopterON = false;
     private int randomXPosition = 3;
     GameObject carDriveSound;
-    
+    private Rigidbody rb;
     private void Start()
     {
         anim = GetComponent<SplineAnimate>();
         Currentspline = anim.Container;
+        rb = GetComponent<Rigidbody>();
        // GetComponent<VehicleObstacleDetector>().enabled = true;
     }
     private void OnMouseDown()
@@ -88,8 +89,9 @@ public class VehicleController : MonoBehaviour
 
     private void DriveVehicle()
     {
-        GetComponent<Rigidbody>().isKinematic = false;
+        rb.isKinematic = false;
         anim.Restart(true);
+        //GameManager.instance.isCarMoving = true;
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -140,6 +142,9 @@ public class VehicleController : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null; // Wait for the next frame
         }
+        rb.isKinematic = true;
+
+
     }
     [SerializeField]
     SplineContainer Currentspline;
