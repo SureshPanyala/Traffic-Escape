@@ -33,7 +33,7 @@ public class SoundManager : MonoBehaviour
         if(0 == LevelManager.CurrentLevel())
             PlaySoundLoop(sound: Sounds.BGM);
     }
-    public AudioSource PlaySound(Sounds sound)
+    public GameObject PlaySound(Sounds sound)
     {
         GameObject gameObject = new GameObject("Sound", typeof(AudioSource));
         AudioSource audioSource = gameObject.GetComponent<AudioSource>();
@@ -41,7 +41,7 @@ public class SoundManager : MonoBehaviour
         audioSource.outputAudioMixerGroup = sfxgroup;
         audioSource.Play();
         Destroy(gameObject, audioSource.clip.length);
-        return audioSource;
+        return audioSource.gameObject;
     }
     public void PlaySoundLoop(Sounds sound)
     {
