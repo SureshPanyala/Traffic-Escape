@@ -1,18 +1,379 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c7d408ca-5a59-4b74-b0a3-5572d30fd593" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/GameCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level11.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level11.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples/Example-Scene-01.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples/Example-Scene-01.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples/StylisedWaterProfile.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples/StylisedWaterProfile.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-02.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-02.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-03.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-03.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/greyboxing.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/greyboxing.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/skybox.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/skybox.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Meshes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Meshes/example-scene-01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Meshes/example-scene-01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Core.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Core/FlagEnumAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Core/FlagEnumAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Editor/FlagEnumAttributeDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Editor/FlagEnumAttributeDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBox.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBox.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeHelper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeTransforms.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeTransforms.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WateverVolumeFloater.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WateverVolumeFloater.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders/Triplanar.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders/Triplanar.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders/WaterVolume-URP.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders/WaterVolume-URP.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures/greyboxing-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures/greyboxing-01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures/waves_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures/waves_n.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Camp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Camp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Campfire.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Campfire.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.001.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.001.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.002.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.002.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.003.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.003.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.004.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.004.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.005.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.005.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.006.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.006.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.007.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.007.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.008.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.008.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.009.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.009.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.010.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.010.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.011.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.011.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.012.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.012.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.013.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.013.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.014.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.014.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.015.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.015.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.016.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.016.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.017.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.017.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.018.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.018.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.019.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.019.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.020.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.020.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.021.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.021.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.022.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.022.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.023.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.023.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.024.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.024.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.025.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.025.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.026.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.026.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.027.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.027.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.028.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.028.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.029.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.029.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.030.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Details.030.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.001.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.001.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.002.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.002.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.003.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.003.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.004.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.004.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.005.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.005.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.006.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.006.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks_Update_3.3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks_Update_3.3.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_05.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_05.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.001.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.001.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.002.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.002.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.003.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.003.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.004.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.004.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.005.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.005.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.006.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.006.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.007.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.007.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.008.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.008.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.009.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.009.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.010.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.010.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.011.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.011.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.012.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.012.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.013.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.013.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.014.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.014.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.015.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.015.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.016.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.016.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.017.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.017.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.018.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.018.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.019.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.019.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.020.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.020.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.021.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.021.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.022.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.022.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.023.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.023.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.024.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.024.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.001.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.001.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.002.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.002.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.003.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.003.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.004.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.004.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.005.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.005.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.006.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.006.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.007.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.007.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.008.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.008.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.009.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.009.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.010.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.010.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.011.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.011.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.012.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.012.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.013.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.013.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.014.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.014.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.015.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.015.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.016.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.016.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.017.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.017.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry/LPN.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry/LPN.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry/LPN_Camp.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry/LPN_Camp.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry/LPN_Large_Rocks.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry/LPN_Large_Rocks.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry/LPN_Mountains.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Geometry/LPN_Mountains.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Camp.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Camp.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Details.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Details.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Ground.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Ground.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Large_Rocks.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Large_Rocks.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Mountains.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Mountains.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Rocks.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Rocks.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Trees.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Materials/LPN_Trees.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/HDRI_00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/HDRI_00.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Camp_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Camp_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Camp_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Camp_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Camp_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Camp_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Details_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Details_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Details_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Details_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Details_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Details_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Grass_Terrain_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Grass_Terrain_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Grass_Terrain_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Grass_Terrain_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Grass_Terrain_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Grass_Terrain_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Ground_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Ground_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Ground_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Ground_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Ground_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Ground_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Large_Rocks_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Large_Rocks_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Large_Rocks_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Large_Rocks_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Large_Rocks_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Large_Rocks_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Mountains_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Mountains_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Mountains_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Mountains_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Mountains_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Mountains_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Rocks_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Rocks_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Rocks_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Rocks_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Rocks_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Rocks_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Snow_Terrain_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Snow_Terrain_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Snow_Terrain_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Snow_Terrain_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Snow_Terrain_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Snow_Terrain_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Stones_Terrain_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Stones_Terrain_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Stones_Terrain_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Stones_Terrain_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Stones_Terrain_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Stones_Terrain_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Trees_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Trees_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Trees_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Trees_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Trees_SpecularSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Resources/Textures/LPN_Trees_SpecularSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Scenes/Low-polyStyleNature.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Scenes/Low-polyStyleNature.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Scenes/Low-polyStyleNatureExample.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Scenes/Low-polyStyleNatureExample.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Scenes/Post-processing Profile.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Low-Poly Style Nature/Scenes/Post-processing Profile.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/Materials/speedboat_Albedo.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/Materials/speedboat_Albedo.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/model_0.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/model_0.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/model_1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/model_1.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_AO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_AO.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Albedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Metalness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Metalness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Roughness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Vehicles/Boat.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Vehicles/Boat.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level Boss Boat.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level Boss Boat.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +388,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SymbolManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VehicleManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Water URP/Image Effect Gradientmap/Scripts/Blit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VehicleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -36,17 +396,21 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/VehicleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VehicleManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="2ZDVTjSL7a2oSMRYxm7H6ERiZVw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -70,7 +434,35 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
