@@ -707,9 +707,10 @@ MonoBehaviour:
   splineRoute: {fileID: 0}
   changeSplineRoute: {fileID: 0}
   carType: 0
-  symbolsType: 10
+  symbolsType: 1
   ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 270, z: 0}
+  car: {fileID: 0}
 --- !u!114 &592132100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,9 +1276,10 @@ MonoBehaviour:
   splineRoute: {fileID: 0}
   changeSplineRoute: {fileID: 0}
   carType: 0
-  symbolsType: 10
+  symbolsType: 2
   ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 0, z: 0}
+  car: {fileID: 0}
 --- !u!114 &1079844072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1530,6 +1532,14 @@ MonoBehaviour:
   isCarMoving: 0
   helicopterCount: 10
   switchCount: 10
+  vehicleSpawnerList: []
+  obstacleDetectorList: []
+  healthObject: {fileID: 0}
+  isHelicopterModeOn: 0
+  isSwitchModeOn: 0
+  checkPowerMode: 0
+  helicopterButton: {fileID: 0}
+  switchButton: {fileID: 0}
 --- !u!4 &1153039707
 Transform:
   m_ObjectHideFlags: 0

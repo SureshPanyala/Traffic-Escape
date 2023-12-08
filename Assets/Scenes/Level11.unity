@@ -717,19 +717,19 @@ MonoBehaviour:
         y: 0.25
         z: -4.9480004
       TangentIn:
-        x: 0
-        y: 0
-        z: 0
+        x: -0
+        y: -0
+        z: -0.5660257
       TangentOut:
         x: 0
         y: 0
-        z: 0
+        z: 0.5660257
       Rotation:
         value:
           x: 0
-          y: 0
+          y: 0.004770231
           z: 0
-          w: 1
+          w: 0.9999886
     - Position:
         x: 9.009999
         y: 0.25
@@ -767,11 +767,11 @@ MonoBehaviour:
           z: -0
           w: 0.7144426
     m_MetaData:
-    - Mode: 1
+    - Mode: 0
       Tension: 0.5
       m_DistanceToInterpolation:
-      - Distance: 0
-        T: 0
+      - Distance: -1
+        T: -1
       - Distance: 0.019727161
         T: 0.03448276
       - Distance: 0.077051334
@@ -833,8 +833,8 @@ MonoBehaviour:
     - Mode: 1
       Tension: 0.5
       m_DistanceToInterpolation:
-      - Distance: 0
-        T: 0
+      - Distance: -1
+        T: -1
       - Distance: 0.058482945
         T: 0.03448276
       - Distance: 0.22842701
@@ -981,9 +981,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   splineRoute: {fileID: 592132098}
   changeSplineRoute: {fileID: 975577268}
-  carType: 4
-  symbolsType: 10
-  ChangeSymbolsType: 1
+  carType: 0
+  symbolsType: 1
+  ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 270, z: 0}
   car: {fileID: 0}
 --- !u!114 &592132100
@@ -1402,19 +1402,19 @@ MonoBehaviour:
         y: 0.25
         z: -3.2142775
       TangentIn:
-        x: 0
-        y: 0
-        z: 0
+        x: -0
+        y: -0
+        z: -0.9402439
       TangentOut:
         x: 0
         y: 0
-        z: 0
+        z: 0.9402439
       Rotation:
         value:
-          x: -0.0000000048161874
-          y: 0.0084856935
-          z: 4.0870172e-11
-          w: 0.99996406
+          x: 7.095325e-15
+          y: 0.008397989
+          z: 8.4485413e-13
+          w: 0.9999648
     - Position:
         x: 0.10501051
         y: 0.25
@@ -1434,11 +1434,11 @@ MonoBehaviour:
           z: 4.0870193e-11
           w: 0.99996406
     m_MetaData:
-    - Mode: 1
+    - Mode: 0
       Tension: 0.5
       m_DistanceToInterpolation:
-      - Distance: 0
-        T: 0
+      - Distance: -1
+        T: -1
       - Distance: 0.032769535
         T: 0.03448276
       - Distance: 0.12799257
@@ -1958,19 +1958,19 @@ MonoBehaviour:
         y: 0.25
         z: 1.4300003
       TangentIn:
-        x: 0
-        y: 0
-        z: 0
+        x: -0
+        y: -0
+        z: -0.5643511
       TangentOut:
         x: 0
         y: 0
-        z: 0
+        z: 0.5643511
       Rotation:
         value:
           x: 0
-          y: 0.0029126918
+          y: 0.0067335693
           z: 0
-          w: 0.9999958
+          w: 0.99997735
     - Position:
         x: 0.4100008
         y: 0.25
@@ -2008,11 +2008,11 @@ MonoBehaviour:
           z: 0
           w: 0.7082
     m_MetaData:
-    - Mode: 1
+    - Mode: 0
       Tension: 0.5
       m_DistanceToInterpolation:
-      - Distance: 0
-        T: 0
+      - Distance: -1
+        T: -1
       - Distance: 0.019668575
         T: 0.03448276
       - Distance: 0.076823406
@@ -2074,8 +2074,8 @@ MonoBehaviour:
     - Mode: 1
       Tension: 0.5
       m_DistanceToInterpolation:
-      - Distance: 0
-        T: 0
+      - Distance: -1
+        T: -1
       - Distance: 0.06664051
         T: 0.03448276
       - Distance: 0.26029
@@ -2405,9 +2405,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   splineRoute: {fileID: 1079844072}
   changeSplineRoute: {fileID: 879029638}
-  carType: 4
-  symbolsType: 9
-  ChangeSymbolsType: 7
+  carType: 0
+  symbolsType: 2
+  ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 0, z: 0}
   car: {fileID: 0}
 --- !u!114 &1079844072
@@ -2443,24 +2443,6 @@ MonoBehaviour:
         y: 0.25
         z: 0
       TangentIn:
-        x: 0
-        y: 0
-        z: 0
-      TangentOut:
-        x: 0
-        y: 0
-        z: 0
-      Rotation:
-        value:
-          x: 0
-          y: 0
-          z: 0
-          w: 1
-    - Position:
-        x: -0.8
-        y: 0.2
-        z: 29.3
-      TangentIn:
         x: -0
         y: -0
         z: -2.9300086
@@ -2470,16 +2452,34 @@ MonoBehaviour:
         z: 2.9300086
       Rotation:
         value:
+          x: 0.0008532398
+          y: -0.00085324125
+          z: 0.0000007280198
+          w: 0.9999993
+    - Position:
+        x: -0.8
+        y: 0.2
+        z: 29.3
+      TangentIn:
+        x: 0
+        y: 0
+        z: 0
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0
+      Rotation:
+        value:
           x: 0.0008532362
           y: -0.0008532448
           z: 0.0000048860056
           w: 0.9999993
     m_MetaData:
-    - Mode: 1
+    - Mode: 0
       Tension: 0.5
       m_DistanceToInterpolation:
-      - Distance: 0
-        T: 0
+      - Distance: -1
+        T: -1
       - Distance: 0.09202454
         T: 0.03448276
       - Distance: 0.35992888
@@ -2538,7 +2538,7 @@ MonoBehaviour:
         T: 0.9655172
       - Distance: 29.300083
         T: 1
-    - Mode: 0
+    - Mode: 1
       Tension: 0.5
       m_DistanceToInterpolation:
       - Distance: -1
@@ -2662,7 +2662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -58.699997}
+  m_AnchoredPosition: {x: 0, y: -58.69998}
   m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209092633
@@ -2737,7 +2737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -58.699997}
+  m_AnchoredPosition: {x: 0, y: -58.69998}
   m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248732794
