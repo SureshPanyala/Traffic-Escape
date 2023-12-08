@@ -33,6 +33,10 @@ public class LevelManager : MonoBehaviour
     {
         LoadLevel(0);
     }
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
     public static int CurrentLevel()
     {

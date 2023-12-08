@@ -37,13 +37,13 @@ public class VehicleSpawner : MonoBehaviour
     }
     public void SwitchSplineAnimateOfCar()
     {
-        car.GetComponent<VehicleController>().directionMarkImage.sprite = SymbolManager.GetSymbol(ChangeSymbolsType);
+        car.GetComponent<VehicleController>().directionMarkImage.GetComponent<SpriteRenderer>().sprite = SymbolManager.GetSymbol(ChangeSymbolsType);
         animate.Container = changeSplineRoute;
     }
     public void SwitchSpline()
     {
             animate.Container = changeSplineRoute;
-            car.GetComponent<VehicleController>().directionMarkImage.sprite = SymbolManager.GetSymbol(ChangeSymbolsType);
+            car.GetComponent<VehicleController>().directionMarkImage.GetComponent<SpriteRenderer>().sprite = SymbolManager.GetSymbol(ChangeSymbolsType);
             GameManager.instance.currentPower = GameManager.PowerType.none;
     }
     private void AddSplineAnimateToCar()
@@ -62,7 +62,7 @@ public class VehicleSpawner : MonoBehaviour
     {
         if (Enum.IsDefined(typeof(SymbolManager.SymbolsEnum), symbolsType))
         {
-            car.GetComponent<VehicleController>().directionMarkImage.sprite = SymbolManager.GetSymbol(symbolsType);
+            car.GetComponent<VehicleController>().directionMarkImage.GetComponent<SpriteRenderer>().sprite = SymbolManager.GetSymbol(symbolsType);
         }
     }
 

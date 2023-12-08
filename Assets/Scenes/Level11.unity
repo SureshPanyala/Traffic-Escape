@@ -630,7 +630,7 @@ MonoBehaviour:
   splineRoute: {fileID: 592132098}
   changeSplineRoute: {fileID: 592132098}
   carType: 0
-  symbolsType: 10
+  symbolsType: 1
   ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 270, z: 0}
 --- !u!114 &592132100
@@ -701,6 +701,8 @@ MonoBehaviour:
   - CarType: 2
     vehiclePrefab: {fileID: 0}
   - CarType: 3
+    vehiclePrefab: {fileID: 0}
+  - CarType: 1
     vehiclePrefab: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1466,8 +1468,8 @@ MonoBehaviour:
   splineRoute: {fileID: 1079844072}
   changeSplineRoute: {fileID: 1491366887}
   carType: 0
-  symbolsType: 9
-  ChangeSymbolsType: 1
+  symbolsType: 2
+  ChangeSymbolsType: 0
   CarRotation: {x: 0, y: 0, z: 0}
 --- !u!114 &1079844072
 MonoBehaviour:

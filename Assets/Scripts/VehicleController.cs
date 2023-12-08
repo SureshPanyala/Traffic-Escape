@@ -8,7 +8,7 @@ using DG.Tweening;
 public class VehicleController : MonoBehaviour
 {
     public static event Action carCollided;
-    public Image directionMarkImage;
+    public GameObject directionMarkImage;
     SplineAnimate anim;
     [SerializeField] private float duration = 0.5f;
     [SerializeField] private Vector3 strength;
@@ -24,7 +24,7 @@ public class VehicleController : MonoBehaviour
     private bool isPickedUp = false;
     private bool isHelicopterON = false;
     private int randomXPosition = 3;
-    AudioSource carDriveSound;
+    GameObject carDriveSound;
     Quaternion rot;
     Rigidbody rb;
    
@@ -79,7 +79,7 @@ public class VehicleController : MonoBehaviour
     {
         if (anim.Container.gameObject.GetComponent<ObstacleDetector>().CheckIfPathIsClear())
         {
-            directionMarkImage.enabled = false;
+            directionMarkImage.SetActive(false);
             GetComponent<VehicleController>().enabled = false;
         }
     }
@@ -99,8 +99,8 @@ public class VehicleController : MonoBehaviour
         if (otherCar)
         {
             carCollided?.Invoke();
-            Destroy(carDriveSound);
-            directionMarkImage.enabled = true;
+            Destroy(carDriveSound,1f);
+            directionMarkImage.SetActive(true);
             HitEffect hitEffect = Instantiate(EffectsManager.instance.hitEffect);
             hitEffect.transform.position = collision.contacts[0].point;
             var controller = collision.gameObject.GetComponent<VehicleController>();
@@ -122,7 +122,7 @@ public class VehicleController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        carDriveSound.Stop();
+        carDriveSound.GetComponent<AudioSource>().Stop();
        // GameManager.instance.isCarMoving = false;
         DisableCollider();
         gameObject.SetActive(false);
@@ -156,7 +156,7 @@ public class VehicleController : MonoBehaviour
         else
         {
             anim.Container = Currentspline;
-            directionMarkImage.sprite = SymbolManager.GetSymbol(SymbolsType);
+            directionMarkImage.GetComponent<SpriteRenderer>().sprite = SymbolManager.GetSymbol(SymbolsType);
             GameManager.instance.currentPower = GameManager.PowerType.none;
         }
     }
