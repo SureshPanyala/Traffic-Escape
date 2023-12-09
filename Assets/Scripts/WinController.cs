@@ -7,11 +7,12 @@ public class WinController : MonoBehaviour
     {
         Instance = this;
     }
-    public int totalCarsToFinish;
+    private int totalCarsToFinish;
     private int finishedCars;
     private void Start()
     {
         finishedCars = 0;
+        totalCarsToFinish = FindObjectsOfType<VehicleSpawner>().Length;
     }
     public int FinishedCars
     {

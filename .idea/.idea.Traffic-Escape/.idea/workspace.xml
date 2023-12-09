@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7d408ca-5a59-4b74-b0a3-5572d30fd593" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/Assets/Bitgem.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP.meta" afterDir="false" />
@@ -374,6 +375,179 @@
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Materials/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Materials/Misc/Liquid.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Materials/Misc/Liquid/water_3x3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Materials/Misc/Liquid/water_3x3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Environment.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Environment/Water.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Environment/Water/Flowing.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Environment/Water/Flowing/Sharp.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Environment/Water/Flowing/Sharp/WaterSplashSharp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Environment/Water/Flowing/Sharp/WaterSplashSharp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/water_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/water_3x3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy).meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Water.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Water/CFX_Fountain_Loop.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Water/CFX_Fountain_Loop.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Water/CFX_Ripple.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Water/CFX_Ripple.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Misc/CFX_WhiteCircle.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Misc/CFX_WhiteCircle.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water/CFX_Anim_Splash_4frms.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water/CFX_Anim_Splash_4frms.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water/CFX_Foam_AddSoft.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water/CFX_Foam_AddSoft.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water/CFX_Fountain.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water/CFX_Fountain.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water/CFX_Ripple_AddSoft.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Materials/Water/CFX_Ripple_AddSoft.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Mesh.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Mesh/CFX_Mesh_Circular1.5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Mesh/CFX_Mesh_Circular1.5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_Fountain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_Fountain.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_T_Foam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_T_Foam.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_T_Ripple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_T_Ripple.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_T_Splash_4Frames.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_T_Splash_4Frames.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_T_WhiteCircleSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX_T_WhiteCircleSmall.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX Easy Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX Easy Editor/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Aeroplane_3_Aeroplane_BaseColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Aeroplane_3_Aeroplane_BaseColor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Aeroplane_3_Aeroplane_Metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Aeroplane_3_Aeroplane_Metallic.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Aeroplane_3_Aeroplane_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Aeroplane_3_Aeroplane_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Aeroplane_3_Aeroplane_Roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Aeroplane_3_Aeroplane_Roughness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Materials/Aeroplane_3_Aeroplane_BaseColor.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/Materials/Aeroplane_3_Aeroplane_BaseColor.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/model_0.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/model_0.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/model_1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Aeroplane/model_1.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane/Cargo_Plane_Diffuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane/Cargo_Plane_Diffuse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane/Cargo_Plane_Metallic_Smoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane/Cargo_Plane_Metallic_Smoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane/Cargo_Plane_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane/Cargo_Plane_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane/model_0.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Cargo Plane/model_0.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter/Palette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter/Palette.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter/model_0.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter/model_0.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter/model_1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter/model_1.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter/model_2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Low Poly Helicopter/model_2.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Person 2.2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Person 2.2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Person 3.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Person 3.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Albedo.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Speedboat/speedboat_Albedo.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Vehicles/Aeroplane.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Vehicles/Aeroplane.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level Boss Aeroplane.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level Boss Aeroplane.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ElementRelated/BossVehicles.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ElementRelated/BossVehicles.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ElementRelated/IslandPersonElement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ElementRelated/IslandPersonElement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StylizedWater/_Demo/DemoAssets/Materials/SWS_DemoTerrain 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StylizedWater/_Demo/DemoAssets/Materials/SWS_DemoTerrain 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StylizedWater/_Demo/LakeDemo/TerrainData_75a6a34f-b2e7-46d1-b48d-d1c698e644a2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StylizedWater/_Demo/LakeDemo/TerrainData_75a6a34f-b2e7-46d1-b48d-d1c698e644a2.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Traffic-Escape/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples/Example-Scene-01.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples/Example-Scene-01.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples/StylisedWaterProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Examples/StylisedWaterProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-03.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/example-water-03.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/greyboxing.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/greyboxing.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/skybox.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Materials/skybox.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Meshes/example-scene-01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Meshes/example-scene-01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Core/FlagEnumAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Core/FlagEnumAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Editor/FlagEnumAttributeDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/Editor/FlagEnumAttributeDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBox.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeTransforms.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeTransforms.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WateverVolumeFloater.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WateverVolumeFloater.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders/Triplanar.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders/Triplanar.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders/WaterVolume-URP.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Shaders/WaterVolume-URP.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures/greyboxing-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures/greyboxing-01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures/waves_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bitgem/StylisedWater/URP/Textures/waves_n.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/GameCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Vehicles/Boat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Vehicles/Boat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level Boss Boat.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level Boss Boat.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WinController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WinController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -390,12 +564,20 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VehicleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WinController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ElementRelated/IslandPersonElement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/VehicleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+<<<<<<< Updated upstream
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/WinController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ElementRelated/IslandPersonElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/Assets/Scripts/VehicleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VehicleController.cs" />
       </list>
@@ -444,6 +626,7 @@
         </entry>
       </map>
     </option>
+<<<<<<< Updated upstream
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -460,6 +643,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+=======
+>>>>>>> Stashed changes
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

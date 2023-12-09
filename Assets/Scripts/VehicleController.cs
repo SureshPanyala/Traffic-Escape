@@ -25,8 +25,23 @@ public class VehicleController : MonoBehaviour
     [SerializeField] private bool snapping;
     [SerializeField] private bool fadeOut;
     [SerializeField] private object randomnessMode;
+<<<<<<< Updated upstream
 
     AudioSource carDriveSound;
+=======
+    public SymbolManager.SymbolsEnum SymbolsType;
+    GameManager.PowerType powerType;
+    public float pickupDistance = 1f;
+    private Vector3 playerpos;
+    private bool isPickedUp = false;
+    private bool isHelicopterON = false;
+    private int randomXPosition = 3;
+    GameObject carDriveSound;
+    private Rigidbody rb;
+
+    [Header("VEHICLE FX")] public ParticleSystem boatStartWaterRipple;
+    public GameObject boatMovingFx;
+>>>>>>> Stashed changes
     private void Start()
     {
         anim = GetComponent<SplineAnimate>();
@@ -34,6 +49,39 @@ public class VehicleController : MonoBehaviour
     }
     private void OnMouseDown()
     {
+<<<<<<< Updated upstream
+=======
+        //GameManager.instance.ResetHint();
+        GameManager.instance.CheckEligibleVehiclesForSignback();
+        if (GameManager.instance.isCarMoving == true)
+        {
+            Debug.Log("CarMoving");
+            return;
+        }
+        randomXPosition = UnityEngine.Random.Range(-4, 4);
+        playerpos = this.transform.position;
+        Debug.Log(playerpos + "Player picked up!");
+
+        switch (GameManager.instance.currentPower)
+        {
+            case GameManager.PowerType.helicopter:
+                isHelicopterON= true;
+                MoveHelicopter();
+                // Do something for helicopter power type
+                break;
+            case GameManager.PowerType.switchdirection:
+                SwitchSpline();
+                // Do something for switchdirection power type
+                break;
+            case GameManager.PowerType.none:
+                MoveVechile();
+                // Do something for none power type
+                break;
+        }
+    }
+    private void MoveVechile()
+    {
+>>>>>>> Stashed changes
         if (UIManager.Instance.SettingsPanel.activeSelf)
         {
             UIManager.Instance.PanelFadeOut(UIManager.Instance.SettingsPanel, 1);
@@ -41,6 +89,7 @@ public class VehicleController : MonoBehaviour
         UIManager.Instance.touchTutorial?.SetActive(false);
         carDriveSound = SoundManager.instance.PlaySound(sound: SoundManager.Sounds.CarDrive);
         DriveVehicle();
+       if(gameObject.name.Contains("Boat")) MoveFx();
         CheckForCollitions();
     }
     void CheckForCollitions()
@@ -61,6 +110,12 @@ public class VehicleController : MonoBehaviour
         GetComponent<Rigidbody>().isKinematic = false;
         anim.Restart(true);
     }
+
+    void MoveFx()
+    {
+        boatStartWaterRipple.Play();
+        boatMovingFx.SetActive(true);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         var otherCar = collision.gameObject.GetComponent<SplineAnimate>();
@@ -72,7 +127,8 @@ public class VehicleController : MonoBehaviour
             HitEffect hitEffect = Instantiate(EffectsManager.instance.hitEffect);
             hitEffect.transform.position = collision.contacts[0].point;
             var controller = collision.gameObject.GetComponent<VehicleController>();
-            StartCoroutine(controller.DoShake());
+            if(controller && controller.anim.ElapsedTime <= 0)
+                StartCoroutine(controller.DoShake());
             anim.Pause();
             StartCoroutine(ReverseAnimation());
         }
@@ -88,6 +144,7 @@ public class VehicleController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+<<<<<<< Updated upstream
         carDriveSound.Stop();
         DisableCollider();
         Debug.Log("Past the Boundary score++");
@@ -105,7 +162,30 @@ public class VehicleController : MonoBehaviour
     private void DisappearEffect()
     {
         
+=======
+        if(other.name.Contains("WinCubes")){
+            Destroy(carDriveSound, 1f);
+            DisableCollider();
+            Debug.Log("Past the Boundary score++");
+            WinController.Instance.FinishedCars++;
+            SplineContainer maincontainer = anim.Container;
+            maincontainer.gameObject.SetActive(false);
+            GameManager.instance.isCarMoving = false;
+            gameObject.SetActive(false);
+        }
+>>>>>>> Stashed changes
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name.Contains("Person"))
+        {
+            anim.Pause();
+            GameManager.instance.CallTakeDamage();
+            StartCoroutine(ReverseAnimation());
+        }
+    }
+
     private IEnumerator ReverseAnimation()
     {
         float duration = anim.ElapsedTime;
@@ -123,8 +203,12 @@ public class VehicleController : MonoBehaviour
             yield return null;
         }
         rb.isKinematic = true;
+<<<<<<< Updated upstream
         GameManager.instance.isCarMoving = false;
         Debug.Log("Vehicle stoped moving");
+=======
+        if(gameObject.name.Contains("Boat")) boatMovingFx.SetActive(false);
+>>>>>>> Stashed changes
     }
     [SerializeField]
     SplineContainer Currentspline;
