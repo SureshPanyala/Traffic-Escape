@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         {
             if (vehicleSpawnerList[i].gameObject.activeInHierarchy)
             {
-                vehicleSpawnerList[i].car.gameObject.transform.GetChild(4).gameObject.SetActive(false);
+                vehicleSpawnerList[i].car.gameObject.transform.GetChild(6).gameObject.SetActive(true);
             }
         }
     }
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         {
             if (vehicleSpawnerList[i].gameObject.activeInHierarchy)
             {
-                vehicleSpawnerList[i].car.gameObject.transform.GetChild(4).gameObject.SetActive(false);
+                vehicleSpawnerList[i].car.gameObject.transform.GetChild(6).gameObject.SetActive(false);
             }
         }
     }
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (obstacleDetectorList[i].gameObject.GetComponent<VehicleSpawner>() != null)
                     {
-                        obstacleDetectorList[i].gameObject.GetComponent<VehicleSpawner>().car.gameObject.transform.GetChild(4).gameObject.SetActive(false);
+                        obstacleDetectorList[i].gameObject.GetComponent<VehicleSpawner>().car.gameObject.transform.GetChild(6).gameObject.SetActive(false);
                     }
                     else
                     {
@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
             {
                 if (obstacleDetectorList[i].gameObject.GetComponent<VehicleSpawner>() != null)
                 {
-                    obstacleDetectorList[i].gameObject.GetComponent<VehicleSpawner>().car.gameObject.transform.GetChild(4).gameObject.SetActive(true);
+                    obstacleDetectorList[i].gameObject.GetComponent<VehicleSpawner>().car.gameObject.transform.GetChild(6).gameObject.SetActive(true);
                 }
                 else
                 {

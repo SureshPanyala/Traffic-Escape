@@ -1455,7 +1455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf06b49e5fe71ee47ae7028d6af933e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionMarkImage: {fileID: 7168393269377785823}
+  directionMarkImage: {fileID: 0}
   duration: 0.5
   strength: {x: 0, y: 15, z: 0}
   vibrato: 0

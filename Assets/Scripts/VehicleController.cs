@@ -35,7 +35,7 @@ public class VehicleController : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        GameManager.instance.ResetHint();
+        //GameManager.instance.ResetHint();
         GameManager.instance.CheckEligibleVehiclesForSignback();
         if (GameManager.instance.isCarMoving == true)
         {
@@ -167,6 +167,7 @@ public class VehicleController : MonoBehaviour
 
     public void MoveHelicopter()
     {
+        GameManager.instance.helicopterObject.transform.position = new Vector3(UnityEngine.Random.Range(-20f, 20f), 18, 9);
         GameManager.instance.isCarMoving = true;
         GameManager.instance.HelicopterCountNumber(); ;
         GameManager.instance.helicopterObject.transform.DOMove(playerpos, 3f, false)
@@ -176,9 +177,10 @@ public class VehicleController : MonoBehaviour
     void MovementComplete()
     {
         this.transform.tag = "Player";
-        this.transform.SetParent(GameManager.instance.helicopterObject.transform);
-        GameManager.instance.helicopterObject.transform.DOMove(GenerateRandomSkyPosition(), 3f, false).OnComplete(HeliCopterReachedBack);
-        GameManager.instance.helicopterObject.transform.DORotate(new Vector3(0, 0, 30f), 1f);
+        this.transform.SetParent(GameManager.instance.helicopterObject.transform.GetChild(0).GetChild(0).GetChild(3).transform);
+        GameManager.instance.helicopterObject.transform.DORotate(new Vector3(-45f, 210f, 0f), 1f);
+        GameManager.instance.helicopterObject.transform.DOMove(GenerateRandomSkyPosition(), 2.5f, false).OnComplete(HeliCopterReachedBack);
+        
         // Code to be executed after the movement is complete
         Debug.Log("Helicopter movement complete!");
         // Add your additional code here...
@@ -186,7 +188,7 @@ public class VehicleController : MonoBehaviour
 
     void HeliCopterReachedBack()
     {
-        foreach (Transform child in GameManager.instance.helicopterObject.transform)
+        foreach (Transform child in GameManager.instance.helicopterObject.transform.GetChild(0).GetChild(0).GetChild(3).transform)
         {
             if (child.tag == "Player")
                 // Deactivate the child object
@@ -194,6 +196,7 @@ public class VehicleController : MonoBehaviour
         }
         // Additional actions, if any
         GameManager.instance.currentPower = GameManager.PowerType.none;
+        GameManager.instance.helicopterObject.transform.DORotate(new Vector3(0f, 0f, 0f), 1f);
         //isHelicopterON = false;
         WinController.Instance.FinishedCars++;
         GameManager.instance.isCarMoving = false;
@@ -204,9 +207,9 @@ public class VehicleController : MonoBehaviour
     Vector3 GenerateRandomSkyPosition()
     {
         // Customize this method based on your sky position requirements
-        float randomX = UnityEngine.Random.Range(-10f, 10f);
-        float randomY = UnityEngine.Random.Range(20f, 30f);
-        float randomZ = UnityEngine.Random.Range(-10f, 10f);
+        float randomX = UnityEngine.Random.Range(0f, 1f);
+        float randomY = UnityEngine.Random.Range(25f, 25f);
+        float randomZ = UnityEngine.Random.Range(8f, 9f);
 
         return new Vector3(randomX, randomY, randomZ);
     }
