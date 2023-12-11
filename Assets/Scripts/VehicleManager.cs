@@ -81,7 +81,8 @@ public class VehicleManager : MonoBehaviour
         Police,
         Bus,
         Tocus,
-        Boat
+        Boat,
+        Aeroplane
     }
 
     [Serializable]
