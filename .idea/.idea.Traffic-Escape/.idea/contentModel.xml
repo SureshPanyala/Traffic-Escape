@@ -404,6 +404,11 @@
             </e>
           </e>
         </e>
+        <e p="JMO Assets" t="Include">
+          <e p="Toony Colors Pro" t="Include">
+            <e p="Demo TCP2" t="Include" />
+          </e>
+        </e>
         <e p="Low-Poly Style Nature" t="Include">
           <e p="Prefabs" t="Include" />
           <e p="Resources" t="Include">

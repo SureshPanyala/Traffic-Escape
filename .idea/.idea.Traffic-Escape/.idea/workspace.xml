@@ -16,7 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
+<<<<<<< Updated upstream
     <select />
+=======
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/Malik-Branch" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+>>>>>>> Stashed changes
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7d408ca-5a59-4b74-b0a3-5572d30fd593" name="Default Changelist" comment="">
