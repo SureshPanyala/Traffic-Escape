@@ -6953,7 +6953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81f0d23b7a8aaa4fa66c03c80f74abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalCarsToFinish: 10
+  totalCarsToFinish: 11
 --- !u!4 &1445054695
 Transform:
   m_ObjectHideFlags: 0
