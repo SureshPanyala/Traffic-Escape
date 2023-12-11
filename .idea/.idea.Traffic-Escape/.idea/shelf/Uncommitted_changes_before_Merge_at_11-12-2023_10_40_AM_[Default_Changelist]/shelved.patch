@@ -1,0 +1,13 @@
+Index: Assets/JMO Assets.meta
+===================================================================
+--- Assets/JMO Assets.meta	(revision 2d5fce0ab54c1faf0a4ca926361e5ec34f0722eb)
++++ Assets/JMO Assets.meta	(revision 2d5fce0ab54c1faf0a4ca926361e5ec34f0722eb)
+@@ -1,8 +0,0 @@
+-fileFormatVersion: 2
+-guid: f5c91abdba8b0414b90b5cc56b5cd971
+-folderAsset: yes
+-DefaultImporter:
+-  externalObjects: {}
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
